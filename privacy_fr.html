@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/config.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *,body{
+        font-family: 'Tajawal', sans-serif;
+        text-align: left;
+    }
+    .text-orange{
+        color: #f21238;
+    }
+  </style>
+
+</head>
+<body>
+    <div class="bg-white px-6 py-4 lg:px-8">
+        <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+          <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Politique de confidentialité</h1>
+          <p class="text-base font-semibold leading-7 text-orange">À propos de nous</p>
+          <p class="mt-2 text-sm leading-8">
+            Avec notre application, vous pouvez commander facilement et rapidement dans votre restaurant préféré. Que ce soit dans le snack du coin ou dans la pizzeria en plein centre-ville. Téléchargez notre application et profitez de cette expérience incroyable !
+          </p>
+          
+          <p class="text-base font-semibold leading-7 text-orange">Utilisation de nos services</p>
+          <p class="mt-2 text-sm leading-8">Ces règles s'appliquent uniquement lorsque vous utilisez notre plateforme. En cas de problème avec la nourriture ou la commande, cela concerne la relation entre vous et le restaurant. Une fois la commande passée, elle est considérée comme définitive sauf si le restaurant vous autorise à l'annuler.</p>
+        
+          <p class="text-base font-semibold leading-7 text-orange">Les commandes</p>
+          <p class="mt-2 text-sm leading-8">En appuyant sur 'Commander maintenant', vous concluez un accord avec le restaurant. Veuillez vérifier l'exactitude de vos coordonnées. Si vous choisissez la livraison, assurez-vous d'être présent pour la réception. Vous pouvez également donner un pourboire au livreur de votre nourriture.</p>
+
+
+          <p class="text-base font-semibold leading-7 text-orange">Vos données</p>
+          <p class="mt-2 text-sm leading-8">
+            Lors de l'utilisation de nos services, nous pouvons collecter ou recevoir des informations personnelles vous concernant pour fournir ces services et faire fonctionner nos activités. Les types d'informations personnelles que nous pourrions collecter à votre sujet sont les suivants :
+          </p>
+
+          <p class="mt-2 text-sm leading-8 font-semibold">A. Les informations que vous nous fournissez directement</p>
+
+          <p class="mt-2 text-sm leading-8">
+            Profil utilisateur : Nous recueillons des informations de profil associées à votre compte client. Cela peut inclure des informations telles que votre nom, votre adresse e-mail, votre adresse de livraison et votre numéro de téléphone.
+          </p>
+
+          <p class="mt-2 text-sm leading-8">Détails de la commande : Lorsque vous passez une commande via nos services, nous recueillons des informations concernant cette commande. Cela peut inclure des informations telles que les articles achetés, les instructions spéciales, la date et l'heure de la commande, et le total partiel.</p>
+        
+          <p class="mt-2 text-sm leading-8 font-semibold">B. Les informations agrégées automatiquement</p>
+          
+          <p class="mt-2 text-sm leading-8">
+            Nous pouvons également recevoir et stocker automatiquement des informations sur vos appareils lorsque vous accédez à notre site et utilisez nos services, ce qui peut inclure des informations sur votre navigateur et votre système d'exploitation.
+          </p>
+          <p class="mt-2 text-sm leading-8">
+            Nous respectons votre vie privée, donc si vous souhaitez supprimer vos données, veuillez nous contacter.
+          </p>
+        </div>
+    </div>
+    
+    <script>
+        const { createApp, ref } = Vue
+      
+        createApp({
+          setup() {
+            const bar = ref(false)
+            return {
+                bar
+            }
+          }
+        }).mount('#app')
+    </script>
+</body>
+</html>
