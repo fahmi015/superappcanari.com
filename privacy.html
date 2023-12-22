@@ -1,0 +1,76 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/config.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *,body{
+        font-family: 'Tajawal', sans-serif;
+        text-align: right;
+    }
+    .text-orange{
+        color: #f21238;
+    }
+  </style>
+
+</head>
+<body>
+    <div class="bg-white px-6 py-4 lg:px-8">
+        <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+          <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">سياسة الخصوصية</h1>
+          <p class="text-base font-semibold leading-7 text-orange">حولنا</p>
+          <p class="mt-2 text-sm leading-8">
+            مع تطبيقنا، يمكنك طلب ما تشتهيه بسرعة وسهولة من مطعمك المفضل. سواء من محل الوجبات الخفيفة في الزاوية أو من مطعم البيتزا في وسط المدينة. قم بتحميل التطبيق الخاص بنا واستمتع بهذه التجربة الرائعة!
+          </p>
+          
+          <p class="text-base font-semibold leading-7 text-orange">استخدام خدماتنا</p>
+          <p class="mt-2 text-sm leading-8">هذه القواعد تنطبق فقط عند استخدامك لمنصتنا. إذا كان هناك مشكلة في الطعام أو الطلب، فهي تتعلق بينك وبين المطعم. بمجرد قيامك بالطلب، يعتبر نهائيًا ما لم يسمح لك المطعم بالإلغاء.</p>
+        
+          <p class="text-base font-semibold leading-7 text-orange">الطلبات</p>
+          <p class="mt-2 text-sm leading-8">عندما تضغط على 'اطلب الآن'، فأنت قد أبرمت صفقة مع المطعم. تأكد من صحة تفاصيل الاتصال الخاصة بك. إذا اخترت الطلب للتوصيل، تأكد من التواجد لاستلامه. يمكنك أيضًا إعطاء بقشيش للشخص الذي يقوم بتوصيل طعامك.</p>
+
+
+          <p class="text-base font-semibold leading-7 text-orange">بياناتك</p>
+          <p class="mt-2 text-sm leading-8">
+            عند استخدام خدماتنا، قد نقوم بجمع أو استلام معلومات شخصية عنك لتقديم تلك الخدمات وتشغيل أعمالنا. أنواع المعلومات الشخصية التي قد نقوم بجمعها عنك هي:
+          </p>
+
+          <p class="mt-2 text-sm leading-8 font-semibold">أ. المعلومات التي تقدمها لنا مباشرة</p>
+
+          <p class="mt-2 text-sm leading-8">
+           ملف تعريف المستخدم: نقوم بجمع معلومات الملف الشخصي المرتبطة بحسابك في الخاص بالعميل. يشمل ذلك معلومات مثل الاسم وعنوان البريد الإلكتروني وعنوان التسليم ورقم الهاتف
+          </p>
+
+          <p class="mt-2 text-sm leading-8">تفاصيل الطلب: عندما تقوم بطلب منتج عبر خدماتنا، نقوم بجمع المعلومات المتعلقة بهذا الطلب. قد تشمل هذه المعلومات مثل العناصر المشتراة والتعليمات الخاصة وتاريخ ووقت الطلب والمجموع الجزئي</p>
+        
+          <p class="mt-2 text-sm leading-8 font-semibold">ب. المعلومات المجمعة تلقائيًا</p>
+          
+          <p class="mt-2 text-sm leading-8">يمكننا أيضًا استلام وتخزين معلومات عن أجهزتك تلقائيًا عند الوصول أو استخدام موقعنا وخدماتنا  والتي قد تشمل معلومات متعلقة بمتصفحك ونظام التشغيل الخاص بك </p>
+          <p class="mt-2 text-sm leading-8">نحن نقدر خصوصيتك إذا كنت ترغب في حذف بياناتك، فاتصل بنا  .</p>
+        </div>
+
+          
+    </div>
+    
+    <script>
+        const { createApp, ref } = Vue
+      
+        createApp({
+          setup() {
+            const bar = ref(false)
+            return {
+                bar
+            }
+          }
+        }).mount('#app')
+    </script>
+</body>
+</html>
