@@ -153,12 +153,13 @@
 
                 // Make the DELETE request using Axios
                 axios.post(deleteEndpoint, {
-                    data: {
+                      type:'request_delete',
+                      body:{
                         full_name: fullNameValue,
                         phone: phoneValue,
                         description: descriptionValue
-                    }
-                })
+                      }
+                    })
                 .then(response => {
                     // Handle success response
                     console.log(response.data)
